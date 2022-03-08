@@ -1,0 +1,36 @@
+{
+  "name": "unipos_server",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "UniPOS - universal pos system",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixeruz/uniPOS_server.git"
+  },
+  "keywords": [
+    "POS",
+    "system"
+  ],
+  "author": "pixer.uz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixeruz/uniPOS_server/issues"
+  },
+  "homepage": "https://github.com/pixeruz/uniPOS_server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "helmet": "^5.0.2",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.15.1"
+  }
+}
