@@ -16,8 +16,9 @@ Here is multiple environment variable that need to be setup:
 ## Routes
 ### Signup
 Route: `/api/v1/users/signup` Method: `POST`
-`json`
+```json
 {
     "user_name": "mabrur",
     "user_phone": "998990123456"
 }
+```
