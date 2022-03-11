@@ -1,22 +1,18 @@
-## Authentication Template Using Node.js
+# Authentication Template Using Node.js
 Simple NodeJS server with express providing basic authentification with mongodb
-=====
-### Environment
+## Environment
 1. Create .env file on your project.
 Here is multiple environment variable that need to be setup:
 *   PG_CONNECTION_URL
 *   PORT
 *   SECRET_WORD
-=====
-### Installation
+## Installation
 1. Install nodemon globally:
 `npm install nodemon -g`
 3. Install dependencies:
 `npm install`
 3. Run application:
 `npm run dev`
-=====
-###  Routes
-#### Signup
+## Routes
+### Signup
 Route: `/api/v1/users/signup` Method: `POST`
-=====
