@@ -37,14 +37,14 @@ Response:
 ### Validate Code
 Route: `/api/v1/users/validate-code` Method: `POST`
 Header:
-```json
+```
 code-validation-id: 772b6427-ff7f-400b-a9c8-fe164480a0e8
 ```
 Request: 
 ```json
 {
     "code": 721017,
-    "user_device": "Android" // IOS, other
+    "user_device": "Android" # IOS, other
 }
 ```
 Response:
