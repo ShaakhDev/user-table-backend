@@ -1,5 +1,5 @@
 # Authentication Template Using Node.js
-Simple NodeJS server with express providing basic authentification with mongodb
+Simple NodeJS server with express providing basic authentification with postgresql (sequelize).
 ## Environment
 1. Create .env file on your project.
 Here is multiple environment variable that need to be setup:
@@ -16,3 +16,8 @@ Here is multiple environment variable that need to be setup:
 ## Routes
 ### Signup
 Route: `/api/v1/users/signup` Method: `POST`
+`json`
+{
+    "user_name": "mabrur",
+    "user_phone": "998990123456"
+}
