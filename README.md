@@ -44,9 +44,10 @@ Request:
 ```json
 {
     "code": 721017,
-    "user_device": "Android" # IOS, other
+    "user_device": "Android"
 }
 ```
+`user_device` can be "Android", "IOS", "other".
 Response:
 ```json
 {
