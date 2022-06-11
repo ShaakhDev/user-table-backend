@@ -26,5 +26,6 @@ export default async function mongo() {
         return db;
     } catch (error) {
         console.log(error);
+        throw new Error(error);
     }
 }

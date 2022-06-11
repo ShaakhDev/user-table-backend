@@ -12,6 +12,10 @@ export default async function UsersModel(Mongoose) {
             unique: true,
 
         },
+        user_password: {
+            type: String,
+            required: true,
+        },
         id: {
             type: String,
             required: true,

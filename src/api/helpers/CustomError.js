@@ -13,6 +13,7 @@ let errorHandlerMiddleware = function errorHandlerMiddleware(
 ) {
     res.status(error.code || 500).json({
         ok: false,
+        status: error.code || 500,
         message: error.message || "Internal Server Error",
     });
 };

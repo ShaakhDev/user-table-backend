@@ -1,6 +1,7 @@
-export const uid = () =>
-    String(
-        Date.now().toString(32) +
-        Math.random().toString(16)
-    ).replace(/\./g, '')
+import { customAlphabet } from 'nanoid'
+const nanoid = customAlphabet('0123456789abc', 10)
+
+
+export const uid = (limit) =>
+    nanoid(limit);
 

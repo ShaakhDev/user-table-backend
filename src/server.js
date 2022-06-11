@@ -3,8 +3,7 @@ import Express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import DotEnv from 'dotenv';
-import Mongoose from 'mongoose';
-
+import cors from 'cors';
 
 
 import { errorHandlerMiddleware } from "./api/helpers/CustomError.js";
@@ -33,7 +32,7 @@ async function server() {
             console.log(`Server is running on port ${PORT}`);
         }
         );
-
+        app.use(cors())
         app.use(Express.json());
         app.use(Express.urlencoded({ extended: true }));
 
