@@ -178,7 +178,7 @@ export default class UsersController {
                 throw new res.error(403, "User is already blocked!");
             }
 
-            await req.db.users.deleteMany({ 'id': { $in: req.body } });
+            await req.db.users.deleteMany({ 'id': { $in: req.body.users } });
 
             res.json({
                 ok: true,
