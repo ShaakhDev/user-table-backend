@@ -119,7 +119,7 @@ export default class UsersController {
             });
 
             if (user.status === "blocked") {
-                throw new res.error(403, "User is already blocked!");
+                throw new res.error(403, "User is blocked!");
             }
 
 
@@ -149,7 +149,7 @@ export default class UsersController {
             console.log(req.body.user_name)
 
             if (user.status === "blocked") {
-                throw new res.error(403, "User is already blocked!");
+                throw new res.error(403, "User is blocked!");
             }
 
             await req.db.users.updateMany({ 'id': { $in: req.body.users } }, { $set: { 'status': 'active' } });
@@ -175,7 +175,7 @@ export default class UsersController {
             });
 
             if (user.status === "blocked") {
-                throw new res.error(403, "User is already blocked!");
+                throw new res.error(403, "User is blocked!");
             }
 
             await req.db.users.deleteMany({ 'id': { $in: req.body.users } });

@@ -16,7 +16,7 @@ DotEnv.config();
 
 const app = Express();
 
-//import PORT from .env
+
 const PORT = process.env.PORT || 6690;
 
 //setup server function 
@@ -25,8 +25,7 @@ async function server() {
     try {
         //connect to mongodb
         const db = await mongo();
-        // Mongoose.connect(process.env.MONGODB_URI, { useUnifiedTopology: true });
-        // console.log('Mongodb ga ulanish hosil qilindi');
+
 
         app.listen(PORT, () => {
             console.log(`Server is running on port ${PORT}`);

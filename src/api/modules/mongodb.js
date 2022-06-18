@@ -14,6 +14,7 @@ if (!DB_URI) {
 
 export default async function mongo() {
     try {
+        Mongoose.connection.useDb("Users");
         await Mongoose.connect(DB_URI, { useUnifiedTopology: true });
         console.log("Mongodb ga ulanish hosil qilindi");
 
